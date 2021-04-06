@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ns.child.childcomp.controller.childComp" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					                    <List noDataText="No data" id="list0">
+					                        <items>
+					                            <StandardListItem title="List Item 1" id="item0"/>
+					                            <StandardListItem title="List Item 2" id="item1"/>
+					                            <StandardListItem title="List Item 3" id="item2"/></items>
+					                    </List>
+					              
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

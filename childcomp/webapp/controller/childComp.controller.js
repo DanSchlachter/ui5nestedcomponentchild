@@ -10,6 +10,7 @@ sap.ui.define([
 		return Controller.extend("ns.child.childcomp.controller.childComp", {
 			onInit: function () {
 
+                
 			}
 		});
 	});

@@ -49,6 +49,11 @@ modules:
 - name: nschildchildcomp
   type: html5
   path: childcomp
+  provides:
+    - name: provideChildUI
+      public: true
+      properties:
+        service_url: '${default-url}'
   build-parameters:
     build-result: dist
     builder: custom
@@ -88,5 +93,12 @@ resources:
     service: xsuaa
     service-name: child-xsuaa-service
     service-plan: application
+- name: html5_app_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: html5_app_runtime
+    service-plan: app-runtime
 parameters:
   deploy_mode: html5-repo
+
